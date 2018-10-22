@@ -1,7 +1,7 @@
 import React from "react"
 import Item from "../item"
 import App from "../app"
-import "./newitem.css"
+import "./form.css"
 
 class Form extends React.Component {
    constructor(props) {

@@ -1,0 +1,51 @@
+.list-container  {
+  /* border-bottom: 1px solid #ffffff; */
+  border-bottom: 1px solid rgba(255,255,255,.25);
+  width: 480px;
+}
+
+
+.list-container label {
+  padding: 8px 10px 8px 15px;
+  outline: none;
+  height: 60px;
+   line-height: 35px;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.checkbox {
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  color: #ffffff;
+}
+
+.list-container form {
+  height: 60px;
+}
+
+.removeButton {
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+  color: #ffffff;
+  height: 60px;
+  margin: 0;
+}
+
+.removeButton p {
+  padding: 0 20px 0 0;
+  margin: 0;
+  color: #ffffff;
+  height: 30px;
+  font-size: 16px;
+  font-weight: 500;
+}

@@ -51,7 +51,7 @@ import Form from "./form"
     return (
       <div className="wrapper">
         <div className="todo-container">
-          <h1>Things to do:</h1>
+          <h1>Things to do</h1>
           <Form onSubmit={this.handleNewItem} />
           {this.state.toDoItem.map((item, index) => (
             <Item

@@ -18,17 +18,21 @@ class Item extends React.Component {
 
    render() {
     return (
-      <div>
+      <div className="list-container">
         <form>
           <label>
+          <div className="list-form">
           <input
            type="checkbox"
            className="task-checkbox"
            checked={this.props.done}
            onChange={this.handleChangeOnCheck} />
+
              <span className="checkbox" />
              {this.props.text}
-             <button onClick={this.handleRemoveToDo}>Remove</button>
+             </div>
+
+             <button className="removeButton" onClick={this.handleRemoveToDo}><p>—</p></button>
 
           </label>
         </form>
