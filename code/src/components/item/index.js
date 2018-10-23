@@ -6,14 +6,14 @@ import "./item.css"
 
 class Item extends React.Component {
 
-   handleChangeOnCheck = () => {
+  handleChangeOnCheck = () => {
     this.props.whenChecked(this.props.index)
-  }
+}
 
 
   handleRemoveToDo = (e) => {
-  e.preventDefault()
-  this.props.removeToDo(this.props.index)
+    e.preventDefault()
+    this.props.removeToDo(this.props.index)
 }
 
    render() {
@@ -21,19 +21,16 @@ class Item extends React.Component {
       <div className="list-container">
         <form>
           <label>
-          <div className="list-form">
-          <input
-           type="checkbox"
-           className="task-checkbox"
-           checked={this.props.done}
-           onChange={this.handleChangeOnCheck} />
-
-             <span className="checkbox" />
-             {this.props.text}
+            <div className="list-form">
+              <input
+               type="checkbox"
+               className="task-checkbox"
+               checked={this.props.done}
+               onChange={this.handleChangeOnCheck} />
+               <span className="checkbox" />
+                <p>{this.props.text}</p>
              </div>
-
-             <button className="removeButton" onClick={this.handleRemoveToDo}><p>—</p></button>
-
+             <button className="removeButton" onClick={this.handleRemoveToDo}><p>Remove</p></button>
           </label>
         </form>
       </div>

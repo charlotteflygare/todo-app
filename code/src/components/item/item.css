@@ -1,23 +1,23 @@
 .list-container  {
-  /* border-bottom: 1px solid #ffffff; */
-  border-bottom: 1px solid rgba(255,255,255,.25);
-  width: 480px;
+  width: 800px;
 }
 
-
 .list-container label {
+  width: 700px;
   padding: 8px 10px 8px 15px;
   outline: none;
   height: 60px;
-   line-height: 35px;
+  line-height: 35px;
   font-size: 16px;
   font-family: 'Lato', sans-serif;
   color: #ffffff;
   display: flex;
+  margin: 0px;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255,255,255,.25);
 }
-
 
 .checkbox {
   font-size: 20px;
@@ -29,6 +29,13 @@
   height: 60px;
 }
 
+.list-form p {
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
 .removeButton {
   background-color: Transparent;
   background-repeat:no-repeat;
@@ -38,14 +45,23 @@
   outline:none;
   color: #ffffff;
   height: 60px;
-  margin: 0;
+  margin: 0px;
 }
 
 .removeButton p {
   padding: 0 20px 0 0;
-  margin: 0;
-  color: #ffffff;
+  margin: 0px;
+  color: #00adef;
   height: 30px;
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.removeButton p:hover {
+  padding: 0 20px 0 0;
+  margin: 0px;
+  color: #0079a5;
+  height: 30px;
+  font-size: 20px;
   font-weight: 500;
 }

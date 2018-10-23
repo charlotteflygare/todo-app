@@ -9,12 +9,7 @@ body {
   padding: 0;
   font-family: sans-serif;
   font-family: 'Lato', sans-serif;
-  /* background: #C33764;
-  background: -webkit-linear-gradient(to top, #C33764, #1D2671);
-  background: linear-gradient(to top, #C33764, #1D2671);  */
-  background: #2b5876;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #2b5876, #4e4376);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #2b5876, #4e4376); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: #394144;
   height: 700px;
   z-index: 0;
 }
@@ -31,37 +26,48 @@ body {
 
 .todo-container {
   display: flex;
-  width: 600px;
-  height:600px;
+  width: 800px;
+  height:1000px;
   flex-direction: column;
-  align-items: center;
-  margin-top: 40px;
+  align-items: flex-start;
+  margin-top: 50px;
 }
 
 .todo-container input {
   padding: 8px 8px 8px 15px;
-  height: 44px;
-  width: 400px;
+  height: 60px;
+  width: 550px;
   border-radius: 56px;
   outline: none;
-  font-size: 16px;
+  font-size: 20px;
   font-family: 'Lato', sans-serif;
   display: inline-block;
   color: #172f5e;
+  margin-right: 10px;
   margin-bottom: 30px;
+  text-transform: capitalize;
 }
 
 .todo-container form {
-  width: 500px;
+  margin-top: 60px;
+  width: 800px;
 }
 
 .todo-container h1 {
-  margin-left: auto;
-  font-weight: 500;
-  font-size: 50px;
-  letter-spacing: 1px;
-  margin-right: auto;
+  font-weight: 600;
+  font-size: 100px;
   color: #ffffff;
-  text-align: center;
-  margin-bottom: 50px;
+  text-align: left;
+  margin: 0px;
+  padding-bottom: 10px;
+  line-height: 0.8;
+}
+
+.todo-container h2 {
+  font-weight: 600;
+  font-size: 100px;
+  color: #ffdd02;
+  text-align: left;
+  margin: 0px;
+  padding-top: 0;
 }
