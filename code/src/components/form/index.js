@@ -28,7 +28,7 @@ class Form extends React.Component {
            type="text"
            value={this.state.text}
            onChange={this.handleChange} />
-         <button className="addButton" type="submit">Add</button>
+         <button className="addButton fadeIn" type="submit">Add</button>
        </form>
      </div>
    )
